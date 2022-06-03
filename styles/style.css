@@ -36,3 +36,17 @@ article {
     height: 82%;
     padding: 10px;
 }
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    a, p {
+        font-size: 5vw;
+    }
+
+    article {
+        padding: 30px;
+    }
+}
