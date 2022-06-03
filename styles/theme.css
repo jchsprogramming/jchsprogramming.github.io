@@ -1,0 +1,20 @@
+/*
+Theme Colors
+White: #ffffff
+Pink: #ffccc2
+Lavender: #cbcdf7
+Purple: #7376ec
+Gray: #595959
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #7376ec
+}
+
+div, p {
+    font-family: 'Tajawal';
+    color: #595959;
+}
