@@ -1,15 +1,3 @@
-h1 {
-    font-size: 5vh;
-}
-
-a {
-    font-size: 2.5vh;
-}
-
-p {
-    font-size: 2.5vh;
-}
-
 .flex {
     display: flex;
 }
@@ -17,4 +5,12 @@ p {
 .center {
     justify-content: center;
     align-items: center;
+}
+
+.column {
+    flex-flow: column;
+}
+
+.clickable {
+    cursor: pointer;
 }
