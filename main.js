@@ -156,21 +156,27 @@ var app = {
         }
     },
     loadPage: function(article, page) {
-        var content = this.config.pages[page.toLowerCase()];
+        page = page.toLowerCase();
+
+        var content = app.config.pages[page];
         var element;
+        
+        console.log(content);
 
-        for (var i = 0; i < content.length; i++) {
-            element = document.createElement(content[i][0]);
-            element.innerText = content[i][1];
+        if (content.length !== undefined) {
+            for (var i = 0; i < content.length; i++) {
+                element = document.createElement(content[i][0]);
+                element.innerText = content[i][1];
 
-            if (content[i][2]) {
-                element.className = content[i][2];
+                if (content[i][2]) {
+                    element.className = content[i][2];
+                }
+
+                article.appendChild(element);
             }
-
-            article.appendChild(element);
         }
 
-        switch(page.toLowerCase()) {
+        switch(page) {
             case 'projects':
                 this.loadProjects(article);
                 break;
