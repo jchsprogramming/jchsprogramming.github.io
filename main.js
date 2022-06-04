@@ -110,7 +110,9 @@ var app = {
         }
     },
     clearContent: function(article) {
-        article.innerText = '';
+        while (article.firstElementChild) {
+            article.removeChild(article.firstElementChild);
+        }
     },
     loadHome: function(article) {
         var p = document.createElement('p');
