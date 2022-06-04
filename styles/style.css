@@ -1,14 +1,11 @@
 header {
     height: 18%;
+    margin-bottom: 5px;
 }
 
 .title {
     height: 60%;
     margin-bottom: calc(5vh * 0.18);
-}
-
-h1 {
-    font-size: 5vh;
 }
 
 .nav {
@@ -28,12 +25,70 @@ h1 {
     background: #cbcdf7;
 }
 
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
 a, p {
     font-size: 2.5vh;
 }
 
 article {
-    height: 82%;
+    min-height: calc(82% - 20px);
     padding: 10px;
-    overflow-y: scroll;
+}
+
+article * {
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.footnote {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.project {
+    height: max-content;
+}
+
+.project * {
+    margin-bottom: 0;
+}
+
+.project p {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.float-r {
+    margin-right: 15px;
+}
+
+.source {
+    height: 30vh;
+}
+
+.source * {
+    height: 100%;
+    border: 1px solid black;
+}
+
+.contact {
+    height: 1000px;
+    width: 100%;
+}
+
+.contact iframe {
+    height: 100%;
+    width: 100%;
+    border: 0px solid black;
 }
