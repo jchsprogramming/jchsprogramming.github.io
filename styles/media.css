@@ -1,0 +1,116 @@
+@media (orientation: portrait) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    a, p {
+        font-size: 5vw;
+    }
+
+    article {
+        padding: 30px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 500px) {
+    h1 {
+        font-size: 5.75vw;
+    }
+
+    a, p {
+        font-size: 3.75vw;
+    }
+
+    header {
+        height: 12%;
+    }
+
+    article {
+        height: 88%;
+    }
+
+    .title {
+        height: 45%
+    }
+
+    .nav {
+        height: 50%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 600px) {
+    header {
+        height: 20%;
+    }
+
+    article {
+        height: 80%;
+    }
+
+    .title {
+        height: 60%
+    }
+
+    .nav {
+        height: 35%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 850px) {
+    header {
+        height: 11%;
+    }
+
+    .title {
+        height: 60%;
+        margin: 20px;
+    }
+
+    article {
+        height: calc(89% - 20px);
+    }
+}
+
+@media (orientation: landscape) and (max-height: 700px) {
+    header {
+        height: 22%;
+    }
+
+    article {
+        height: 78%;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+    h1 {
+        font-size: 5.5vh;
+    }
+
+    a, p {
+        font-size: 3.5vh;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    a, p {
+        font-size: 4vh;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 400px) {
+    header {
+        height: 24%;
+    }
+
+    article {
+        height: 76%;
+    }
+
+    h1 {
+        font-size: 6vh;
+    }
+
+    a, p {
+        font-size: 4.5vh;
+    }
+}
