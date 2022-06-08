@@ -39,7 +39,7 @@ a, p {
 
 article {
     min-height: calc(82% - 20px);
-    padding: 10px;
+    padding: 25px;
 }
 
 article * {
@@ -83,7 +83,7 @@ article * {
 }
 
 .contact {
-    height: 1000px;
+    height: 1010px;
     width: 100%;
 }
 

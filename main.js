@@ -10,7 +10,8 @@ var app = {
             home: [
                 ['h2', 'Home'],
                 ['br', null],
-                ['p', 'Welcome to our website!'],
+                ['p', 'Welcome to our website! Our goal is to bring together students who enjoy computer programming and create a framework for collaboration and connection on personal projects, which can be created in any programming language.'],
+                ['br', null],
                 ['p', '● To learn about the club, click on the About link in the navigation bar above'],
                 ['p', '● A collection of our projects of the month can be accessed by navigating to the Projects link'],
                 ['p', '● To get in touch with us, navigate to the Contact link and fill out the form']
@@ -19,6 +20,7 @@ var app = {
                 ['h2', 'About'],
                 ['br', null],
                 ['p', 'Welcome to James Caldwell High School\'s Programming Club!'],
+                ['p', 'Students who have worked on the monthly project will display their unique take on a concept and students attending will have an opportunity to view other club members\' projects and vote on our favorite project of the month.'],
                 ['p', 'Meetings are held every 1st Tuesday of the month after school in Room 206.'], 
                 ['br', null],
                 ['p', 'Club Board', 'heading'],
@@ -40,7 +42,7 @@ var app = {
                 ['h2', 'Contact'],
                 ['br', null],
                 ['p', 'Feel free to contact us with any questions, comments, or concerns!'],
-                ['p', 'We look forward to hearing from you.'],
+                ['p', 'You can also reach us at 24jsan@student.cwcboe.org or 24ali@student.cwcboe.org. We look forward to hearing from you!'],
                 ['br', null]
             ]
         },
@@ -125,7 +127,7 @@ var app = {
         }
     
         if (!active) {
-            app.current.page = target.innerText;
+            e.view.app.current.page = target.innerText;
             for (var i = 0; i < navs.length; i++) {
                 classes[1] = navs[i].className.split(' ');
                 for (var k = 0; k < classes[1].length; k++) {
@@ -138,7 +140,7 @@ var app = {
             classes[0][classes[0].length] = 'active';
             target.className = classes[0].join(' ');
 
-            app.loadContent(app.current.page);
+            e.view.app.loadContent(e.view.app.current.page);
         }
     },
     createContainer: function() {
@@ -156,24 +158,20 @@ var app = {
         }
     },
     loadPage: function(article, page) {
-        page = page.toLowerCase();
+        page = page.toLowerCase().trim();
 
-        var content = app.config.pages[page];
+        var content = this.config.pages[page];
         var element;
-        
-        console.log(content);
 
-        if (content.length !== undefined) {
-            for (var i = 0; i < content.length; i++) {
-                element = document.createElement(content[i][0]);
-                element.innerText = content[i][1];
+        for (var i = 0; i < content.length; i++) {
+            element = document.createElement(content[i][0]);
+            element.innerText = content[i][1];
 
-                if (content[i][2]) {
-                    element.className = content[i][2];
-                }
-
-                article.appendChild(element);
+            if (content[i][2]) {
+                element.className = content[i][2];
             }
+
+            article.appendChild(element);
         }
 
         switch(page) {
