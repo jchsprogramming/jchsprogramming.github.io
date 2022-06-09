@@ -157,6 +157,30 @@ var app = {
             article.removeChild(article.firstElementChild);
         }
     },
+    createElement: function(content, article) {
+        var element;
+
+        for (var i = 0; i < content.length; i++) {
+            element = document.createElement(content[0]);
+            
+            if (content[0] !== 'div') {
+                element.innerText = content[1];
+            } else {
+                var child;
+
+                for (var j = 0; j < content[1].length; j++) {
+                    child = this.createElement(content[1][j], article);
+                    element.appendChild(child);
+                }
+            }
+
+            if (content[2]) {
+                element.className = content[2];
+            }
+        }
+
+        return element;
+    },
     loadPage: function(article, page) {
         page = page.toLowerCase().trim();
 
@@ -164,13 +188,7 @@ var app = {
         var element;
 
         for (var i = 0; i < content.length; i++) {
-            element = document.createElement(content[i][0]);
-            element.innerText = content[i][1];
-
-            if (content[i][2]) {
-                element.className = content[i][2];
-            }
-
+            element = this.createElement(content[i], article);
             article.appendChild(element);
         }
 
