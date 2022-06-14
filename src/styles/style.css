@@ -42,16 +42,21 @@ h2 {
     font-size: 4vh;
 }
 
-a, p {
+button, p {
     font-size: 2.5vh;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 article {
-    min-height: calc(82% - 20px);
+    min-height: calc(82% - 5px);
     padding: 25px;
 }
 
-article * {
+.content * {
     margin-bottom: 10px;
 }
 
