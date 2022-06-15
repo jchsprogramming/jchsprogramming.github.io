@@ -1,20 +1,42 @@
-/*
-Theme Colors
-White: #ffffff
-Pink: #ffccc2
-Lavender: #cbcdf7
-Purple: #7376ec
-Gray: #595959
-*/
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway';
-    text-transform: uppercase;
+h1, h2, h3, h4, h5, h6, pre {
+    font-family: 'Courier New';
     font-weight: bold;
-    color: #7376ec /*#7d7dff*/;
 }
 
-div, p, button {
-    font-family: 'Tajawal';
-    color: #595959 /*#7677ca*/;
+div, p, button, span, ul, li, .marker {
+    font-family: 'Inconsolata';
+}
+
+body, .iframe-bg {
+    background: #f6ebeb;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    color: #6d68b8;
+}
+
+p, pre, ul, li {
+    color: #686298;
+}
+
+.active {
+    color: #7d7dff;
+}
+
+.logo {
+    background: #d8d6fe;
+}
+
+.title {
+    color: #fefefe;
+}
+
+.brackets {
+    color: #efefff;
+}
+
+article {
+    background-color: #f7cbd4;
+    border-top: 3px solid #827dc9;
+    border-bottom: 3px solid #827dc9;
 }

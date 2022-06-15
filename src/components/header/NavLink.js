@@ -11,7 +11,7 @@ export default class NavBar extends React.Component {
 
     render() {
         return (
-            <div className={"navpage flex center clickable" + this.isActive()}><button className="clickable">{this.props.label}</button></div>
+            <div className="navpage flex center clickable"><button className={"clickable" + this.isActive()}>{this.props.label}</button></div>
         );
     }
 };

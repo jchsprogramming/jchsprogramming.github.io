@@ -1,49 +1,63 @@
-/*
-Pink: #ffd2c
-Logo circle back: #d8d6fe
-Lines: #6d68b8
-“White”: #fff9f9
-Text (everything except body & club name): #7d7dff
-Body text: #7677ca
-*/
-
-header {
-    height: 18%;
-    margin-bottom: 5px;
+h1 {
+    font-size: 5vh;
 }
 
-.title {
-    height: 60%;
-    margin-bottom: calc(5vh * 0.18);
+h2 {
+    font-size: 3.5vh;
+}
+
+button, pre {
+    font-size: 4.5vh;
+}
+
+p, ul, li {
+    font-size: 2.75vh;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    margin-top: 7.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .nav {
-    height: 35%;
-    background: #ffccc2;
+    height: 4vh;
     justify-content: space-evenly;
 }
 
 .navpage {
     height: 100%;
     width: 25%;
-    border-left: 1px solid #7376ec;
-    border-right: 1px solid #7376ec;
 }
 
-.active {
-    background: #cbcdf7;
+.logo {
+    height: calc((4vh * 5) + 30px);
+    position: relative;
+    bottom: 6vh;
+    border-radius: 100%;
+    z-index: 1;
+    padding: 20px;
 }
 
-h1 {
-    font-size: 5vh;
+.brackets {
+    font-size: calc(4vh * 3.75);
+    font-weight: normal;
+    width: 40px;
 }
 
-h2 {
-    font-size: 4vh;
-}
-
-button, p {
+.title-1 {
     font-size: 2.5vh;
+}
+
+.title-2 {
+    font-size: 3.5vh;
+}
+
+.title-3 {
+    font-size: 4.25vh;
 }
 
 button {
@@ -52,17 +66,48 @@ button {
 }
 
 article {
-    min-height: calc(82% - 5px);
-    padding: 25px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.2) 35px, rgba(255, 255, 255, 0.2) 70px), repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255, 255, 255, 0.4) 35px, rgba(255, 255, 255, 0.4) 70px);
+    background-attachment: fixed;
+    padding: 50px 30px 40px 50px;
 }
 
-.content * {
+.img-content, .text-content {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+.content, .text-content {
+    line-height: 1.5;
+}
+
+.text-content {
+    padding: 0 25px 0 75px;
+}
+
+.text-content * {
     margin-bottom: 10px;
+}
+
+.marker, .marker pre {
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.marker pre {
+    font-size: 2.5vh;
+    height: 100%;
+    align-self: flex-start;
+}
+
+.heading, .underline {
+    text-decoration: underline;
 }
 
 .heading {
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .footnote {
@@ -96,13 +141,21 @@ article {
     border: 1px solid black;
 }
 
-.contact {
-    height: 1010px;
-    width: 100%;
+.iframe-bg, .contact {
+    height: 1000px;
+    width: 640px;
+}
+
+.iframe-bg {
+    width: 576px;
 }
 
 .contact iframe {
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
+    position: relative;
+    right: 32px;
+    bottom: 1030px;
+    margin-bottom: -1000px;
     border: 0px solid black;
 }
