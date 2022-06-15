@@ -9,7 +9,7 @@ export default class Content extends React.Component {
     loadPage(active) {
         switch(active) {
             case 0:
-                return (<Home />);
+                return (<Home setNavPage={this.props.setNavPage} />);
             case 1:
                 return (<About />);
             case 2:

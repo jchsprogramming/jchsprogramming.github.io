@@ -2,20 +2,20 @@ h1 {
     font-size: 5vh;
 }
 
-h2 {
-    font-size: 3.5vh;
-}
-
 button, pre {
     font-size: 4.5vh;
 }
 
-p, ul, li {
+p, ul, li, textarea {
     font-size: 2.75vh;
 }
 
 ul {
     list-style: none;
+}
+
+textarea {
+    resize: none;
 }
 
 header {
@@ -29,13 +29,11 @@ header {
 }
 
 .navpage {
-    height: 100%;
     width: 25%;
 }
 
 .logo {
     height: calc((4vh * 5) + 30px);
-    position: relative;
     bottom: 6vh;
     border-radius: 100%;
     z-index: 1;
@@ -48,11 +46,15 @@ header {
     width: 40px;
 }
 
-.title-1 {
+.brackets, textarea {
+    user-select: none;
+}
+
+.title-1, .marker pre {
     font-size: 2.5vh;
 }
 
-.title-2 {
+.title-2, h2 {
     font-size: 3.5vh;
 }
 
@@ -60,9 +62,10 @@ header {
     font-size: 4.25vh;
 }
 
-button {
+button, textarea {
     background: none;
     border: none;
+    outline: none;
 }
 
 article {
@@ -75,11 +78,7 @@ article {
     width: 50%;
 }
 
-img {
-    width: 100%;
-}
-
-.content, .text-content {
+.content, .text-content, textarea {
     line-height: 1.5;
 }
 
@@ -92,13 +91,10 @@ img {
 }
 
 .marker, .marker pre {
-    height: 100%;
     margin-bottom: 0px;
 }
 
 .marker pre {
-    font-size: 2.5vh;
-    height: 100%;
     align-self: flex-start;
 }
 
@@ -106,12 +102,11 @@ img {
     text-decoration: underline;
 }
 
-.heading {
+.heading, .footnote {
     font-weight: bold;
 }
 
 .footnote {
-    font-weight: bold;
     font-style: italic;
 }
 
@@ -137,7 +132,6 @@ img {
 }
 
 .source * {
-    height: 100%;
     border: 1px solid black;
 }
 
@@ -153,9 +147,40 @@ img {
 .contact iframe {
     height: inherit;
     width: inherit;
-    position: relative;
     right: 32px;
     bottom: 1030px;
     margin-bottom: -1000px;
     border: 0px solid black;
+}
+
+footer {
+    padding: 30px 50px;
+}
+
+td {
+    width: 12.5vh;
+    margin-right: 10vh;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.td-long {
+    width: 16.5vh;
+}
+
+.link-row button {
+    font-size: 2vh;
+}
+
+.socials img {
+    height: 8vh;
+    margin: 0 10px;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
 }

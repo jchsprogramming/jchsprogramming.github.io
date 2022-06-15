@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, pre {
     font-weight: bold;
 }
 
-div, p, button, span, ul, li, .marker {
+div, p, button, span, ul, li, .marker, textarea {
     font-family: 'Inconsolata';
 }
 
@@ -11,12 +11,20 @@ body, .iframe-bg {
     background: #f6ebeb;
 }
 
-h1, h2, h3, h4, h5, h6, button {
+h1, h2, h3, h4, h5, h6, button, a {
     color: #6d68b8;
 }
 
-p, pre, ul, li {
+p, pre, ul, li, textarea {
     color: #686298;
+}
+
+::selection {
+    background: #d8d6fe;
+}
+
+::-moz-selection {
+    background: #d8d6fe;
 }
 
 .active {
@@ -29,6 +37,14 @@ p, pre, ul, li {
 
 .title {
     color: #fefefe;
+}
+
+.title::selection {
+    background: #6d68b8;
+}
+
+.title::-moz-selection {
+    background: #6d68b8;
 }
 
 .brackets {

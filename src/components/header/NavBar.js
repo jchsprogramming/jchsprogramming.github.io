@@ -6,18 +6,8 @@ import Logo from './Logo.js';
 export default class NavBar extends React.Component {
     constructor(props) {
         super(props);
-        this.setNavPage = this.setNavPage.bind(this);
+        this.setNavPage = this.props.setNavPage;
         this.updatePage = this.props.updatePage;
-    }
-
-    setNavPage(e) {
-        var navs = document.getElementsByClassName('navpage');
-
-        for (var i = 0; i < navs.length; i++) {
-            if (navs[i].innerText === e.target.innerText) {
-                this.updatePage(i);
-            }
-        }
     }
 
     render() {
