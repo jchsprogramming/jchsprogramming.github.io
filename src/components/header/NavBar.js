@@ -11,13 +11,6 @@ export default class NavBar extends React.Component {
 
     setNavPage(e) {
         var navs = document.getElementsByClassName('navpage');
-        var target;
-    
-        if (e.target.localName === 'button') {
-            target = e.target.parentElement;
-        } else {
-            target = e.target;
-        }
 
         for (var i = 0; i < navs.length; i++) {
             if (navs[i].innerText === e.target.innerText) {
