@@ -8,31 +8,31 @@ div, p, button, span, ul, li, .marker, textarea {
 }
 
 body, .iframe-bg {
-    background: #f6ebeb;
+    background: #FCFFFF;
 }
 
 h1, h2, h3, h4, h5, h6, button, a {
-    color: #6d68b8;
+    color: #1745AD;
 }
 
 p, pre, ul, li, textarea {
-    color: #686298;
+    color: #305EC6;
 }
 
 ::selection {
-    background: #d8d6fe;
+    background: #C2F0FF;
 }
 
 ::-moz-selection {
-    background: #d8d6fe;
+    background: #C9F7FF;
 }
 
 .active {
-    color: #7d7dff;
+    color: #6391F9;
 }
 
 .logo {
-    background: #d8d6fe;
+    background: #96C4FF;
 }
 
 .title {
@@ -40,11 +40,11 @@ p, pre, ul, li, textarea {
 }
 
 .title::selection {
-    background: #6d68b8;
+    background: #305EC6;
 }
 
 .title::-moz-selection {
-    background: #6d68b8;
+    background: #305EC6;
 }
 
 .brackets {
@@ -52,7 +52,11 @@ p, pre, ul, li, textarea {
 }
 
 article {
-    background-color: #f7cbd4;
-    border-top: 3px solid #827dc9;
-    border-bottom: 3px solid #827dc9;
+    background-color: #EFFFFF;
+    border-top: 3px solid #305EC6;
+    border-bottom: 3px solid #305EC6;
+}
+
+.clickable:hover:not(.header) {
+    color: #6391F9;
 }

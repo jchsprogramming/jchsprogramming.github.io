@@ -3,11 +3,29 @@ import React from 'react';
 import instagram from '../content/img/instagram.svg';
 import github from '../content/img/github.svg';
 
+import instagramHover from '../content/img/instagram-hover.svg';
+import githubHover from '../content/img/github-hover.svg';
+
 export default class Footer extends React.Component {
     constructor(props) {
         super(props);
         this.setNavPage = this.props.setNavPage;
         this.updatePage = this.props.updatePage;
+    }
+
+    imgHover(e) {
+        var img = e.target.alt.toLowerCase();
+        
+        switch (img) {
+            case 'instagram':
+                e.target.src = e.type === 'mouseover' ? instagramHover : instagram;
+                break;
+            case 'github':
+                e.target.src = e.type === 'mouseover' ? githubHover : github;
+                break;
+            default:
+                break;
+        }
     }
     
     render() {
@@ -28,8 +46,8 @@ export default class Footer extends React.Component {
                     </tbody>
                 </table>
                 <div className="socials inline-flex">
-                    <a className="clickable" /* href="" target="_blank" rel="noopener noreferrer" */><img className="full-width" src={instagram} alt="Instagram" /></a>
-                    <a className="clickable" href="https://github.com/jchsprogramming" target="_blank" rel="noopener noreferrer"><img className="full-width" src={github} alt="Github" /></a>
+                    <a className="clickable" href="*" /* href="" target="_blank" rel="noopener noreferrer" */><img className="full-width" onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={instagram} alt="Instagram" /></a>
+                    <a className="clickable" href="https://github.com/jchsprogramming" target="_blank" rel="noopener noreferrer"><img className="full-width" onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={github} alt="Github" /></a>
                 </div>
             </footer>
         );
