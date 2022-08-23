@@ -1,112 +1,59 @@
 @media (orientation: portrait) {
-    h1 {
-        font-size: 7vw;
-    }
-
-    a, p {
-        font-size: 5vw;
-    }
-
-    article {
-        padding: 30px;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 500px) {
-    h1 {
-        font-size: 5.75vw;
-    }
-
     header {
-        height: 12%;
+        margin-top: 2.5vh;
     }
 
-    article {
-        min-height: 88%;
+    .navpage, .img-content, .text-content, td {
+        width: initial;
     }
 
-    .title {
-        height: 45%
+    .content {
+        display: block;
+    }
+    
+    .logo {
+        display: none;
     }
 
-    .nav {
-        height: 50%;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 600px) {
-    header {
-        height: 20%;
+    button, pre {
+        font-size: 2.75vh;
     }
 
-    article {
-        min-height: 80%;
+    .img-content {
+        margin-bottom: 2vh;
     }
 
-    .title {
-        height: 60%
+    .text-content {
+        padding: 0;
     }
 
-    .nav {
-        height: 35%;
-    }
-}
-
-@media (orientation: portrait) and (min-width: 850px) {
-    header {
-        height: 11%;
+    footer {
+        padding: 10px 15px;
     }
 
-    .title {
-        height: 60%;
-        margin: 20px;
+    tbody {
+        display: flex;
     }
 
-    article {
-        min-height: calc(89% - 20px);
-    }
-}
-
-@media (orientation: landscape) and (max-height: 700px) {
-    header {
-        height: 22%;
+    tr.flex {
+        display: inline-flex;
+        flex-flow: column;
+        width: min-content;
+        margin-right: 3vh;
+        margin-bottom: 0;
     }
 
-    article {
-        min-height: 78%;
-    }
-}
-
-@media (orientation: landscape) and (max-height: 600px) {
-    h1 {
-        font-size: 5.5vh;
+    td, .td-long {
+        width: min-content;
+        margin-right: 0;
+        margin-bottom: 2.5px;
     }
 
-    a, p {
-        font-size: 3.5vh;
-    }
-}
-
-@media (orientation: landscape) and (max-height: 500px) {
-    a, p {
-        font-size: 4vh;
-    }
-}
-
-@media (orientation: landscape) and (max-height: 400px) {
-    header {
-        height: 24%;
+    .socials {
+        justify-content: space-between;
     }
 
-    article {
-        min-height: 76%;
-    }
-
-    h1 {
-        font-size: 6vh;
-    }
-
-    a, p {
-        font-size: 4.5vh;
+    .socials a img.full-width {
+        width: 90%;
     }
 }
