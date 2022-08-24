@@ -19,6 +19,26 @@
         font-size: 2.75vh;
     }
 
+    h2 {
+        font-size: 3vh;
+    }
+
+    p, ul, li, textarea {
+        font-size: 2.5vh;
+    }
+    
+    div.br {
+        height: calc(2.5vh / 2);
+    }
+
+    .mobile-br {
+        padding-bottom: calc(2.5vh / 2);
+    }
+
+    article {
+        padding: 25px 15px 27.5px 25px;
+    }
+
     .img-content {
         margin-bottom: 2vh;
     }
@@ -33,6 +53,7 @@
 
     tbody {
         display: flex;
+        padding-top: 10px;
     }
 
     tr.flex {
@@ -46,7 +67,7 @@
     td, .td-long {
         width: min-content;
         margin-right: 0;
-        margin-bottom: 2.5px;
+        margin-bottom: 15px;
     }
 
     .socials {
@@ -55,5 +76,17 @@
 
     .socials a img.full-width {
         width: 90%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .contact, .contact-iframe {
+        min-height: 1200px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+    .contact, .contact-iframe {
+        min-height: 1100px;
     }
 }

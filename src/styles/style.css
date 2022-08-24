@@ -18,6 +18,10 @@ textarea {
     resize: none;
 }
 
+div.br {
+    height: calc(2.75vh / 2);
+}
+
 header {
     margin-top: 7.5vh;
     margin-bottom: 2.5vh;
@@ -133,21 +137,15 @@ article {
     border: 1px solid black;
 }
 
-.iframe-bg, .contact {
-    height: 1000px;
-    width: 640px;
-}
-
-.iframe-bg {
-    width: 576px;
+.contact, .contact iframe {
+    min-width: 100%;
+    min-height: 1000px;
+    max-height: 1200px;
+    overflow: visible;
 }
 
 .contact iframe {
-    height: inherit;
-    width: inherit;
-    right: 32px;
-    bottom: 1030px;
-    margin-bottom: -1000px;
+    min-height: inherit;
     border: 0px solid black;
 }
 

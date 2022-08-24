@@ -7,7 +7,7 @@ div, p, button, span, ul, li, .marker, textarea {
     font-family: 'Inconsolata';
 }
 
-body, .iframe-bg {
+body {
     background: #FCFFFF;
 }
 
