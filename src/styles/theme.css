@@ -57,6 +57,8 @@ article {
     border-bottom: 3px solid #305EC6;
 }
 
-.clickable:hover:not(.header) {
-    color: #6391F9;
+@media (hover: hover) {
+    .clickable:hover:not(.header) {
+        color: #6391F9;
+    }
 }
