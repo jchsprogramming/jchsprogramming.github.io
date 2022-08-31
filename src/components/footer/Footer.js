@@ -14,17 +14,19 @@ export default class Footer extends React.Component {
     }
 
     imgHover(e) {
-        var img = e.target.alt.toLowerCase();
-        
-        switch (img) {
-            case 'instagram':
-                e.target.src = e.type === 'mouseover' ? instagramHover : instagram;
-                break;
-            case 'github':
-                e.target.src = e.type === 'mouseover' ? githubHover : github;
-                break;
-            default:
-                break;
+        if (!(('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0))) {
+            var img = e.target.alt.toLowerCase();
+            
+            switch (img) {
+                case 'instagram':
+                    e.target.src = e.type === 'mouseover' ? instagramHover : instagram;
+                    break;
+                case 'github':
+                    e.target.src = e.type === 'mouseover' ? githubHover : github;
+                    break;
+                default:
+                    break;
+            }
         }
     }
     
@@ -46,8 +48,8 @@ export default class Footer extends React.Component {
                     </tbody>
                 </table>
                 <div className="socials inline-flex">
-                    <a className="clickable flex center" href="*" /* href="" target="_blank" rel="noopener noreferrer" */><img className="full-width" onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={instagram} alt="Instagram" /></a>
-                    <a className="clickable flex center" href="https://github.com/jchsprogramming" target="_blank" rel="noopener noreferrer"><img className="full-width" onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={github} alt="Github" /></a>
+                    <a className="clickable flex center" href="*" /* href="" target="_blank" rel="noopener noreferrer" */><img onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={instagram} alt="Instagram" /></a>
+                    <a className="clickable flex center" href="https://github.com/jchsprogramming" target="_blank" rel="noopener noreferrer"><img onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={github} alt="Github" /></a>
                 </div>
             </footer>
         );

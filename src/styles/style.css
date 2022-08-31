@@ -168,9 +168,14 @@ td {
     font-size: 2vh;
 }
 
-.socials a img {
+.socials a {
     height: 8vh;
     margin: 0 10px;
+}
+
+.socials a img {
+    height: 100%;
+    width: auto;
 }
 
 .space {

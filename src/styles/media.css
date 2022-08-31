@@ -3,7 +3,7 @@
         margin-top: 2.5vh;
     }
 
-    .navpage, .img-content, .text-content, td {
+    .navpage, .img-content, .text-content {
         width: initial;
     }
 
@@ -51,6 +51,32 @@
         padding: 10px 15px;
     }
 
+    .socials {
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .socials a {
+        margin: 0 5px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 400px) {
+    .socials {
+        flex-flow: column;
+    }
+
+    .socials a {
+        height: 6vh;
+        margin: 5px 0;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 600px) {
+    td {
+        width: initial;
+    }
+    
     tbody {
         display: flex;
         padding-top: 10px;
@@ -69,13 +95,69 @@
         margin-right: 0;
         margin-bottom: 15px;
     }
+}
 
-    .socials {
-        justify-content: space-between;
+@media (orientation: portrait) and (min-width: 600px) {
+    footer {
+        padding: 17.5px 26.25px;
     }
 
-    .socials a img.full-width {
-        width: 90%;
+    .img-content {
+        margin-top: 1vh;
+    }
+
+    img.full-width {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    td {
+        margin-right: 3.5vh;
+    }
+
+    .socials a {
+        height: 6.5vh;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 1300px) {
+    td {
+        width: initial;
+    }
+    
+    tbody {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    tr.flex {
+        display: inline-flex;
+        flex-flow: column;
+        width: min-content;
+        margin-right: 3vh;
+        margin-bottom: 0;
+    }
+
+    td, .td-long {
+        width: min-content;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 2000px) {
+    article {
+        padding: 75px 45px 82.5px 75px;
+    }
+
+    footer {
+        padding: 40px 60px;
+    }
+}
+
+@media (orientation: landscape) and (hover: none) {
+    .link-row * {
+        font-size: 2.5vh;
     }
 }
 
@@ -88,5 +170,11 @@
 @media (min-width: 400px) and (max-width: 650px) {
     .contact, .contact-iframe {
         min-height: 1100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    button, pre {
+        font-size: 3.75vh;
     }
 }

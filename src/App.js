@@ -23,7 +23,7 @@ function App() {
             if ((navs[i].innerText === e.target.innerText) || (navs[i].innerText === e.target.value)) {
                 updatePage(i);
                 if (e.target.classList[0] === 'select-format') {
-                    selectFormat(true)
+                    selectFormat(true);
                 } else {
                     selectFormat(false);
                 }
