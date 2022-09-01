@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d2f2e5bcfc6837a73338",
-    "url": "./static/css/main.230af643.chunk.css"
+    "revision": "263fc53d1340d5995b1f",
+    "url": "./static/css/main.f31cc7c9.chunk.css"
   },
   {
-    "revision": "d2f2e5bcfc6837a73338",
+    "revision": "263fc53d1340d5995b1f",
     "url": "./static/js/main.2615921b.chunk.js"
   },
   {
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "./static/media/github-hover.ae93cc29.svg"
   },
   {
-    "revision": "2b23f37e5c8a8cb027dea67bd25d0d66",
+    "revision": "89f4b480d3abddfb3757e7f0cf389558",
     "url": "./index.html"
   }
 ];
