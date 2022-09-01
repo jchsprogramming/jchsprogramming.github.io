@@ -1,8 +1,9 @@
 import React from 'react';
 
 export default class About extends React.Component {
-    componentDidMount() {
-        document.getElementsByTagName('textarea')[0].style.height = document.getElementsByTagName('textarea')[0].scrollHeight + 'px';
+    constructor(props) {
+        super(props);
+        this.setNavPage = this.props.setNavPage;
     }
 
     render() {
@@ -21,7 +22,7 @@ export default class About extends React.Component {
                 <p>Anthonette Akinyemi — Secretary</p>
                 <p>Mr. Antonucci — Advisor</p>
                 <div className="br"></div>
-                <p className="footnote">Questions, comments, or concerns? Email us: jchsprogramming@gmail.com</p>
+                <p className="footnote">Questions, comments, or concerns? <span className="underline clickable" onClick={this.setNavPage}>Contact</span> us!</p>
             </div>
         );
     }

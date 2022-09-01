@@ -32,7 +32,7 @@
     }
 
     .mobile-br {
-        padding-bottom: calc(2.5vh / 2);
+        padding-bottom: 2vh;
     }
 
     article {
@@ -94,6 +94,10 @@
         width: min-content;
         margin-right: 0;
         margin-bottom: 15px;
+    }
+
+    .socials a {
+        height: 7.25vh;
     }
 }
 
@@ -167,6 +171,12 @@
     }
 }
 
+@media (max-width: 518px) {
+    textarea {
+        height: 4.5em;
+    }
+}
+
 @media (min-width: 400px) and (max-width: 650px) {
     .contact, .contact-iframe {
         min-height: 1005px;
@@ -176,6 +186,12 @@
 @media (orientation: landscape) and (max-width: 900px) {
     button, pre {
         font-size: 3.5vh;
+    }
+}
+
+@media (min-width: 518px) and (max-width: 1110px) {
+    textarea {
+        height: 3em;
     }
 }
 

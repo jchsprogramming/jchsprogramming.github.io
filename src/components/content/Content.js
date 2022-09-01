@@ -11,7 +11,7 @@ export default class Content extends React.Component {
             case 0:
                 return (<Home setNavPage={this.props.setNavPage} />);
             case 1:
-                return (<About />);
+                return (<About setNavPage={this.props.setNavPage} />);
             case 2:
                 return (<Projects />);
             case 3:
