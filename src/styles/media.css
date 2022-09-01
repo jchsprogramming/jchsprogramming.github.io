@@ -61,14 +61,14 @@
     }
 }
 
-@media (orientation: portrait) and (max-width: 400px) {
-    .socials {
-        flex-flow: column;
+@media (orientation: portrait) and (max-width: 315px) {
+    footer {
+        padding: 5px 7.5px;
     }
 
     .socials a {
-        height: 6vh;
-        margin: 5px 0;
+        height: 5vh;
+        margin: 0 2.5px;
     }
 }
 
@@ -86,7 +86,7 @@
         display: inline-flex;
         flex-flow: column;
         width: min-content;
-        margin-right: 3vh;
+        margin-right: 2.25vh;
         margin-bottom: 0;
     }
 
@@ -97,7 +97,7 @@
     }
 
     .socials a {
-        height: 7.25vh;
+        height: 6.5vh;
     }
 }
 
