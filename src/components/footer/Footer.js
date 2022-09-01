@@ -48,7 +48,7 @@ export default class Footer extends React.Component {
                     </tbody>
                 </table>
                 <div className="socials inline-flex">
-                    <a className="clickable flex center" href="*" /* href="" target="_blank" rel="noopener noreferrer" */><img onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={instagram} alt="Instagram" /></a>
+                    <a className="clickable flex center" href="https://www.instagram.com/jchsprogramming/" target="_blank" rel="noopener noreferrer"><img onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={instagram} alt="Instagram" /></a>
                     <a className="clickable flex center" href="https://github.com/jchsprogramming" target="_blank" rel="noopener noreferrer"><img onMouseOver={this.imgHover} onMouseOut={this.imgHover} src={github} alt="Github" /></a>
                 </div>
             </footer>
