@@ -20,7 +20,7 @@ function App() {
         var navs = document.getElementsByClassName('navpage');
 
         for (var i = 0; i < navs.length; i++) {
-            if ((navs[i].innerText === e.target.innerText) || (navs[i].innerText === e.target.value)) {
+            if ((navs[i].innerText.trim() === e.target.innerText.trim()) || (navs[i].innerText.trim() === e.target.value)) {
                 updatePage(i);
                 if (e.target.classList[0] === 'select-format') {
                     selectFormat(true);

@@ -22,7 +22,7 @@ export default class About extends React.Component {
                 <p>Anthonette Akinyemi — Secretary</p>
                 <p>Mr. Antonucci — Advisor</p>
                 <div className="br"></div>
-                <p className="footnote">Questions, comments, or concerns? <span className="underline clickable" onClick={this.setNavPage}>Contact</span> us!</p>
+                <p className="footnote">Questions, comments, or concerns? <button className="footnote underline clickable" value="Contact" onClick={this.setNavPage} readOnly>Contact us!</button></p>
             </div>
         );
     }

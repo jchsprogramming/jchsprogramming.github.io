@@ -6,7 +6,7 @@ button, pre {
     font-size: 4.5vh;
 }
 
-p, ul, li, textarea {
+p, ul, li, textarea, .footnote {
     font-size: 2.75vh;
 }
 
