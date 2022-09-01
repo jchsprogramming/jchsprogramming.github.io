@@ -163,17 +163,23 @@
 
 @media (min-width: 0px) and (max-width: 400px) {
     .contact, .contact-iframe {
-        min-height: 1200px;
+        min-height: 1105px;
     }
 }
 
 @media (min-width: 400px) and (max-width: 650px) {
     .contact, .contact-iframe {
-        min-height: 1100px;
+        min-height: 1005px;
     }
 }
 
-@media (min-width: 1400px) {
+@media (orientation: landscape) and (max-width: 900px) {
+    button, pre {
+        font-size: 3.5vh;
+    }
+}
+
+@media (min-width: 1450px) {
     button, pre {
         font-size: 3.75vh;
     }

@@ -139,8 +139,8 @@ article {
 
 .contact, .contact iframe {
     min-width: 100%;
-    min-height: 1000px;
-    max-height: 1200px;
+    min-height: 905px;
+    max-height: 1105px;
     overflow: visible;
 }
 
