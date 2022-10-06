@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, button, a {
     color: #1745AD;
 }
 
-p, pre, ul, li, textarea, .footnote {
+p, p > a, pre, ul, li, textarea, .footnote {
     color: #305EC6;
 }
 
