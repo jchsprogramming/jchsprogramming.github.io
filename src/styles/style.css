@@ -113,8 +113,8 @@ article {
     font-style: italic;
 }
 
-.project {
-    height: max-content;
+video {
+    width: 70%;
 }
 
 .project * {
@@ -122,7 +122,6 @@ article {
 }
 
 .project p {
-    display: inline-block;
     margin-bottom: 5px;
 }
 
