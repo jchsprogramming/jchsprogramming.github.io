@@ -13,8 +13,8 @@ export default class Projects extends React.Component {
                 <div className="br"></div>
                 <p>View our top-voted projects from each meeting!</p>
                 <div className="br"></div>
-                {projects.reverse().map(({name, author, date, id}) => (
-                    <Project key={id} name={name} author={author} date={date} src={Videos[id - /*1*/ 2]} />
+                {projects.reverse().map(({name, author, date, displayDate, id}) => (
+                    <Project key={id} name={name} author={author} date={date} displayDate={displayDate} src={Videos[id - 1]} />
                 ))}
             </div>
         );
